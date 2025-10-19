@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Představení společnosti BYDUKY s.r.o. | BYDUKY s.r.o.</title>
-    <meta name="description" content="Představení společnosti FiaReal s.r.o. a jejich podnikatelských cílů.">
+    <title>Bydlení u řeky | BYDUKY s.r.o.</title>
+    <meta name="description" content="Představení společnosti BYDUKY s.r.o. a jejich podnikatelských cílů.">
     <meta name="keywords" content="fiareal, společnost fiareal, představení, o společnosti, rekonstrukce, interiéry">
     <meta name="robots" content="index, follow">
     <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
@@ -14,7 +14,9 @@
 <body>
     <div id="header">
         <div id="head_obal">
-            <a href="./index.html"><img src="logo.PNG" id="logo_top" alt="FiaReal s.r.o."></a>
+            <a href="./index.html"><img src="logo.PNG" id="logo_top" alt="BYDUKY s.r.o."></a>
+            
+            <!-- Desktop Menu -->
             <div class="menu-right">
                 <a href="lokalita.html"><div class="button">Lokalita</div></a>
                 <span class="menu-separator">|</span>
@@ -22,6 +24,29 @@
                 <span class="menu-separator">|</span>
                 <a href="kontakt.html"><div class="button last">Kontakt</div></a>
             </div>
+
+            <!-- Hamburger Button -->
+            <button class="hamburger" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </div>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu-overlay" onclick="toggleMenu()"></div>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+        <div class="mobile-menu-header">
+            <h2>MENU</h2>
+            <button class="mobile-menu-close" onclick="toggleMenu()">×</button>
+        </div>
+        <div class="mobile-menu-items">
+            <a href="lokalita.html" onclick="toggleMenu()">Lokalita</a>
+            <a href="galerie.html" onclick="toggleMenu()">Galerie</a>
+            <a href="kontakt.html" onclick="toggleMenu()">Kontakt</a>
         </div>
     </div>
 
@@ -39,6 +64,24 @@
             </div>
         </div>
     </div>
+
+    <script>
+        function toggleMenu() {
+            const hamburger = document.querySelector('.hamburger');
+            const mobileMenu = document.querySelector('.mobile-menu');
+            const overlay = document.querySelector('.mobile-menu-overlay');
+            
+            hamburger.classList.toggle('active');
+            mobileMenu.classList.toggle('active');
+            overlay.classList.toggle('active');
+            
+            if (mobileMenu.classList.contains('active')) {
+                document.body.style.overflow = 'hidden';
+            } else {
+                document.body.style.overflow = '';
+            }
+        }
+    </script>
 
 </body>
 </html>
