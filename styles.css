@@ -68,6 +68,12 @@ body, p, a, li, span, input, button, label, .button, .menu-right {
   position: relative;
 }
 
+/* 🔧 OPRAVA: Header na kontakt page musí být výš, aby překrýval obsah */
+body.kontakt-page #header {
+  position: relative;
+  z-index: 1000;
+}
+
 #head_obal {
   max-width: 950px;
   margin: 0 auto;
@@ -118,6 +124,11 @@ body, p, a, li, span, input, button, label, .button, .menu-right {
   padding: 0;
   z-index: 200;
   position: relative;
+}
+
+/* 🔧 OPRAVA: hamburger musí být vždy nad obsahem */
+.hamburger {
+  z-index: 9999;
 }
 
 .hamburger span {
@@ -369,7 +380,6 @@ body.gallery-page .gallery-item:hover img {
 /* ================================================
    KONTAKT PAGE - JEDEN BOX S VERTIKÁLNÍ ČAROU
    ================================================ */
-
 body.kontakt-page #outer {
   background: #f5f5f5;
   padding: 60px 20px;
