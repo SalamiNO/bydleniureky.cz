@@ -164,7 +164,7 @@ body.kontakt-page #header {
   background: rgba(0, 0, 0, 0.6);
   z-index: 150;
   opacity: 0;
-  transition: opacity 0.25s ease;
+  transition: opacity 0.15s ease;
   pointer-events: none;
 }
 
@@ -184,7 +184,7 @@ body.kontakt-page #header {
   background: #fff;
   box-shadow: -5px 0 15px rgba(0, 0, 0, 0.2);
   z-index: 200;
-  transition: right 0.25s ease-out;
+  transition: right 0.15s ease-out;
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
 }
