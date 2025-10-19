@@ -533,17 +533,25 @@ body.kontakt-page #content {
 
   /* GALERIE NA MOBILU - FOTKY POD SEBOU */
   .gallery-grid {
-    display: block !important;
+    grid-template-columns: 1fr;
+    gap: 30px;
   }
 
-  .gallery-item {
-    display: block !important;
-    width: 100% !important;
-    margin-bottom: 30px;
+  /* KONTAKT NA MOBILU - VŠECHNO POD SEBOU */
+  body.kontakt-page #content {
+    flex-direction: column;
   }
 
-  .gallery-item:last-child {
-    margin-bottom: 0;
+  .contact-divider {
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(to right, transparent, #000 10%, #000 90%, transparent);
+    margin: 0;
+  }
+
+  .contact-wrapper,
+  .contact-info {
+    padding: 30px 25px;
   }
 }
 
