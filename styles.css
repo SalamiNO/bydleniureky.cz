@@ -339,14 +339,16 @@ body.gallery-page #outer {
 
 body.gallery-page #content {
   width: 100%;
-  max-width: 900px;
+  max-width: 1400px;
   margin: 0 auto;
   display: block;
   overflow: visible;
 }
 
 .gallery-grid {
-  display: block;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
   width: 100%;
 }
 
@@ -357,11 +359,6 @@ body.gallery-page #content {
   border-radius: 14px;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25);
   background: #fff;
-  margin-bottom: 40px;
-}
-
-.gallery-item:last-child {
-  margin-bottom: 0;
 }
 
 .gallery-item img {
