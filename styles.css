@@ -437,6 +437,11 @@ body.lokalita-page #content {
   line-height: 1.8;
   color: #333;
   text-align: justify;
+  margin-bottom: 20px;
+}
+
+.lokalita-text p:last-child {
+  margin-bottom: 0;
 }
 
 .map-wrapper {
