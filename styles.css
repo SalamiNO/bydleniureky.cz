@@ -135,7 +135,7 @@ body.kontakt-page #header {
 .mobile-header-right {
   display: none;
   align-items: center;
-  gap: 15px;
+  gap: 12px;
 }
 
 .instagram-link-mobile {
@@ -149,8 +149,8 @@ body.kontakt-page #header {
 }
 
 .instagram-icon-mobile {
-  height: 28px;
-  width: 28px;
+  height: 26px;
+  width: 26px;
   display: block;
 }
 
@@ -161,14 +161,15 @@ body.kontakt-page #header {
   display: none;
   flex-direction: column;
   justify-content: space-around;
-  width: 32px;
-  height: 26px;
+  width: 30px;
+  height: 24px;
   background: transparent;
   border: none;
   cursor: pointer;
   padding: 0;
   z-index: 250;
   position: relative;
+  flex-shrink: 0;
 }
 
 .hamburger span {
@@ -615,7 +616,8 @@ body.kontakt-page #content {
   }
 
   #head_obal {
-    padding: 0 20px;
+    padding: 0 15px;
+    justify-content: space-between;
   }
 
   #logo_top {
@@ -708,8 +710,26 @@ body.kontakt-page #content {
 
 /* ---- TELEFONY ---- */
 @media (max-width: 480px) {
+  #head_obal {
+    padding: 0 12px;
+  }
+
   #logo_top {
     height: 50px;
+  }
+
+  .instagram-icon-mobile {
+    height: 24px;
+    width: 24px;
+  }
+
+  .mobile-header-right {
+    gap: 10px;
+  }
+
+  .hamburger {
+    width: 28px;
+    height: 22px;
   }
 
   .hero-text .hero-subtitle { 
@@ -764,8 +784,26 @@ body.kontakt-page #content {
 }
 
 @media (max-width: 360px) {
+  #head_obal {
+    padding: 0 10px;
+  }
+
   #logo_top {
     height: 45px;
+  }
+
+  .instagram-icon-mobile {
+    height: 22px;
+    width: 22px;
+  }
+
+  .mobile-header-right {
+    gap: 8px;
+  }
+
+  .hamburger {
+    width: 26px;
+    height: 20px;
   }
 
   .hero-text .hero-subtitle { 
